@@ -5,7 +5,7 @@ from ratelimit import limits, sleep_and_retry
 
 
 class SecAPI(object):
-    SEC_CALL_LIMIT = {'calls': 10, 'seconds': 1}
+    SEC_CALL_LIMIT = {'calls': 1, 'seconds': 1}
 
     @staticmethod
     @sleep_and_retry
